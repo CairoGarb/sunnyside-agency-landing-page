@@ -1,0 +1,81 @@
+.clientContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.clients {
+    display: flex;
+    gap: 16px;
+}
+
+.clientContainer h2 {
+    padding-bottom: 64px;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: var(--Grayish-blue);
+}
+
+/* Emily */
+.emily,
+.thomas,
+.jennie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    text-align: center;
+}
+
+.emily p,
+.thomas p,
+.jennie p {
+    font-family: "Barlow", sans-serif;
+    width: 320px;
+    font-weight: 600;
+    color: var(--Very-dark-grayish-blue);
+}
+
+.emily img,
+.thomas img,
+.jennie img {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.eName h3,
+.tName h3,
+.jName h3 {
+    padding-bottom: 8px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+}
+
+.eName p,
+.tName p,
+.jName p {
+    font-size: 14px;
+    color: var(--Grayish-blue);
+}
+
+/* Responsiveness */
+
+/* Tablets and mobiles */
+@media screen and (max-width: 1012px) {
+    .clientContainer {
+        padding: 64px 0;
+        margin: 0;
+    }
+    .clients {
+        flex-direction: column;
+        gap: 48px;
+    }
+    .emily, .thomas, .jennie {
+        gap: 24px;
+    }
+}

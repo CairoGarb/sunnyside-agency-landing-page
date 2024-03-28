@@ -1,0 +1,108 @@
+.gpContainer {
+    display: flex;
+    min-height: 70vh;
+}
+
+.graphic {
+    width: 50%;
+}
+
+.gText {
+    background-image: url(/desktop/image-graphic-design.jpg);
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 32px;
+    color: var(--Dark-desaturated-cyan);
+    font-family: "Fraunces", serif;
+    text-align: center;
+    padding: 32px;
+}
+
+.gText h2 {
+    font-weight: 900;
+}   
+
+.gText p {
+    color: var(--Dark-desaturated-cyan);
+    width: 372px;
+    font-weight: 600;
+    line-height: 24px;
+    font-family: "Barlow", sans-serif;
+}
+
+.photo {
+    width: 50%;
+}
+
+.pText {
+    background-image: url(/desktop/image-photography.jpg);
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 32px;
+    color: var(--Dark-blue);
+    font-family: "Fraunces", serif;
+    text-align: center;
+    padding: 32px;
+}
+
+.pText h2 {
+    font-weight: 900;
+}   
+
+.pText p {
+    color: var(--Dark-blue);
+    width: 372px;
+    font-weight: 600;
+    line-height: 24px;
+    font-family: "Barlow", sans-serif;
+}
+
+/* Responsiveness */
+
+/* Tablets */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .gText, .pText {
+        background-size: cover;
+    }
+    .pText p, .gText p {
+        width: 300px;
+    }
+}
+
+/* Smaller Tablets and mobiles */
+@media screen and (max-width: 600px) {
+    .gpContainer {
+        flex-direction: column;
+        min-height: 150vh;
+    }
+    .graphic, .photo {
+        width: 100%;
+        height: 75vh;
+    }
+    .gText {
+        background-image: url(/mobile/image-graphic-design.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .pText {
+        background-image: url(/mobile/image-photography.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 373px) {
+    .pText p, .gText p {
+        width: 300px;
+    }
+}
